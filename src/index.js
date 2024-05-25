@@ -11,8 +11,8 @@ import Orders from './components/Orders';
 
 
 const router =createBrowserRouter ([
-  {path:"/",element: <Login/>},
-  {path:"/menu",element: <Menu/>},
+  {path:"/",element: <Menu/>},
+  {path:"/menu",element: <Login/>},
   {path:"/orders",element: <Orders/>},
 
 
