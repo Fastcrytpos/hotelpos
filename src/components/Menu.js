@@ -5,8 +5,12 @@ import ItemCard from './ItemCard'
 
 function Menu() {
   return (
-        <ItemCard/>
+    <>
+      <Navbar  />
+      <ItemCard/>
+      <Orders />
      
+  </>
   )
 }
 
