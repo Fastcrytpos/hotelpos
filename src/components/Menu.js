@@ -1,16 +1,17 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Orders from './Orders'
-import ItemCard from './ItemCard'
+
+import Itemslist from './itemslist'
 
 function Menu() {
   return (
-    <>
+    <div className="flex ">
       <Navbar  />
-      <ItemCard/>
+      <Itemslist/>
       <Orders />
      
-  </>
+  </div>
   )
 }
 

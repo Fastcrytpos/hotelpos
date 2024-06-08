@@ -1,13 +1,13 @@
 import React from 'react'
-import mashedpoatato from "../Images/mashedpoatato.jpg"
 import "./style.css";
 
-function ItemCard() {
+function ItemCard({food}) {
+  
   return (
         <div className='card'>
-          <img src={mashedpoatato} alt="hello"></img>
-          <h3>mashedpoatato</h3>
-          <p>$5.48</p>
+          <img src={food.image} alt="hello"></img>
+          <h3>{food.name}</h3>
+          <p>{food.price}</p>
         </div>
   )
 }
