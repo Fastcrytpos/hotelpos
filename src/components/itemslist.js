@@ -3,9 +3,10 @@ import React from 'react'
 import axios from 'axios'
 import ItemCard from './ItemCard'
 
-function Itemslist() {
+function Itemslist({handleclick}) {
 
     const [foods,setFoods]=useState([])
+    
 
     useEffect(()=>{
         happy()
@@ -17,6 +18,7 @@ function Itemslist() {
     .catch(err=>console.error(err))
 
     }
+    
 
 
   return (
@@ -26,7 +28,7 @@ function Itemslist() {
             <button>Search</button>
         </div>
         <div>
-            {foods.map(food => <ItemCard food={food}/>)}
+            {foods.map(food => <ItemCard handleclick={handleclick} food={food}/>)}
         </div>
         
 

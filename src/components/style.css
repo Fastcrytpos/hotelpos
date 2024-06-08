@@ -28,4 +28,18 @@ body {
 .orders{
     margin-top: 20px;
     background-color: rgb(202, 247, 232);
+    border-radius: 10px;
+    align-items: center;
+    flex-shrink: 0;
+    width:200px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.navtext{
+    display: block;
+    
+}
+.navtext:hover{
+    background-color: #31525B;
 }

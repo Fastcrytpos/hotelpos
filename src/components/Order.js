@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Order() {
+function Order({order}) {
   return (
-    <div>Order</div>
+    <li>
+      {order.name}
+      {order.price}
+    </li>
   )
 }
 
