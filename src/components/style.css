@@ -1,19 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    
+   
+    background: linear-gradient(to right, #0B0B0B 65%, #5E2E2E 100%);    
     
 }
 
 .card {
     display: inline-block; /* Use inline-block to ensure elements are inline */
-    margin: 10px; /* Optional: Adds some space between the cards */
-    padding: 10px;
-    border: 1px solid #ccc; /* Optional: Adds a border to the card */
-    border-radius: 5px; /* Optional: Adds rounded corners */
+    margin: 6px; /* Optional: Adds some space between the cards */
+    padding: 6px;
+    border: 1px solid #292525; /* Optional: Adds a border to the card */
+    border-radius: 10px; /* Optional: Adds rounded corners */
     box-shadow: 2px 2px 12px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
     width: 200px; /* Optional: Sets a fixed width for the card */
     text-align: center; /* Optional: Centers text inside the card */
+    background-color: #313131;
+    color: aliceblue;
+
   }
 
 .card img{
@@ -26,20 +29,67 @@ body {
     
 }
 .orders{
+    position: sticky;
+    flex-grow: 1;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     margin-top: 20px;
+    margin-left:0;
+    margin-bottom: 20px;
+    height: 98vh;
+    background-color:#4C4C4C;
+    border-radius: 10px;
+    align-items: center;
+    flex-shrink: 0;
+    
+    text-align: center;
+    padding-top: 10px;
+}
+/* .itemlistconatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left:0;
+    margin-bottom: 20px;
+    height: 98vh;
     background-color: rgb(202, 247, 232);
     border-radius: 10px;
     align-items: center;
     flex-shrink: 0;
-    width:200px;
+    
     text-align: center;
     padding-top: 10px;
-}
-
+    
+} */
 .navtext{
     display: block;
     
 }
 .navtext:hover{
     background-color: #31525B;
+}
+.navcontainer{
+    /*sticky top-0 left-0 flex flex-col items-center py-4 flex-shrink-0 h-screen w-20 bg-cyan-500 rounded-1.5xl*/
+    
+    position: sticky;
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #3b3636;
+    /* width: 900px; */
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+    z-index: 100;
 }

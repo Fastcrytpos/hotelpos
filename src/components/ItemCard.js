@@ -7,7 +7,7 @@ function ItemCard({handleclick,food}) {
         <div className='card ' onClick={()=>handleclick(food)}>
           <img src={food.image} alt="hello"></img>
           <h3>{food.name}</h3>
-          <p>{food.price}</p>
+          <p>${food.price}</p>
           
         </div>
   )
