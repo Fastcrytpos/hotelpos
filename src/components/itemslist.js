@@ -3,21 +3,23 @@ import React from 'react'
 import axios from 'axios'
 import ItemCard from './ItemCard'
 
-function Itemslist({handleclick}) {
+function Itemslist({handleclick,clicked}) {
 
     const [foods,setFoods]=useState([])
+    console.log(`http://localhost:3000/foods/${[clicked]}`)
+    
     
 
     useEffect(()=>{
-        happy()
-    },[])
+      axios(`http://localhost:3000/${[clicked]}`)
+      .then((res)=>{setFoods(res.data)})
+      .catch(err=>console.error(err))
+  
+    },[clicked])
 
-    function happy(){
-    axios("http://localhost:3000/pizza")
-    .then(res=>setFoods(res.data))
-    .catch(err=>console.error(err))
-
-    }
+    
+   
+    
     
 
 

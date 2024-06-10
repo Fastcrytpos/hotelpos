@@ -7,6 +7,7 @@ import Itemslist from './itemslist'
 
 function Menu() {
   const [orders,setOrders]=useState([])
+  const[clicked,setClicked]=useState("pizza")
 
   function handleclick(food) {
     setOrders(prevOrders => {
@@ -22,8 +23,8 @@ function Menu() {
 
   return (
     <div className="flex">
-      <Navbar  />
-      <Itemslist handleclick={handleclick}/>
+      <Navbar  setClicked={setClicked}/>
+      <Itemslist clicked={clicked} handleclick={handleclick}/>
       <Orders orders={orders} />
      
   </div>

@@ -3,7 +3,17 @@ import React from 'react'
 
 
 
-const Navbar = () => {
+const Navbar = ({setClicked}) => {
+
+  
+  function handleclick(e) {
+    setClicked(e.target.innerText);
+  }
+
+
+
+
+
   return (
     /*<div className="/*flex flex-row w-auto flex-shrink-0 pl-4 pr-2 py-4">*/
       <div className="navcontainer">
@@ -12,25 +22,25 @@ const Navbar = () => {
         <div className="navtext text-orange-600 ">
           DashBoard
         </div>
-        <div className="navtext hover:text-orange-600">
-          pizzas
+        <div onClick={e=>handleclick(e)}  className="navtext hover:text-orange-600">
+        pizza
         </div>
-        <div className="navtext hover:text-orange-600">
-        pasta
+        <div onClick={e=>handleclick(e)}  className="navtext hover:text-orange-600">
+          pasta
         </div>
-        <div className="navtext hover:text-orange-600">
+        <div onClick={handleclick}  className="navtext hover:text-orange-600">
         salads
         </div>
-        <div className="navtext hover:text-orange-600">
+        <div onClick={handleclick}  className="navtext hover:text-orange-600">
         dessert
         </div>
-        <div className="navtext hover:text-orange-600">
+        <div onClick={handleclick}  className="navtext hover:text-orange-600">
         drinks
         </div>
-        <div className="navtext hover:text-orange-600">
+        <div onClick={handleclick}  className="navtext hover:text-orange-600">
         sauces
         </div>
-        <div className="navtext hover:text-orange-600">
+        <div onClick={handleclick} className="navtext hover:text-orange-600">
         sides
         </div>
       </div>
