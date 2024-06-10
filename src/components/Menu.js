@@ -21,7 +21,7 @@ function Menu() {
 
 
   return (
-    <div className="flex ">
+    <div className="flex">
       <Navbar  />
       <Itemslist handleclick={handleclick}/>
       <Orders orders={orders} />

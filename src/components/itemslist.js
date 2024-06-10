@@ -22,18 +22,16 @@ function Itemslist({handleclick}) {
 
 
   return (
-    <div className='itemlistconatiner'>
-        <div class="relative  mt-8 sticky top-0 mb-6">
-                <input type="text" placeholder="Search Restaurant, Food, Cuisine or a Dish" class="w-full bg-gray-700 rounded-full py-3 px-6 text-gray-300"/>
-                <span class="material-icons absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-400">search</span>
-        </div>
-        <div>
-            {foods.map(food => <ItemCard handleclick={handleclick} food={food}/>)}
-        </div>
+    <div className='itemlistcontainer'>
+    <div className="flex justify-center w-full mt-8 sticky top-0 mb-6">
+        <input type="text" placeholder="Search Restaurant, Food, Cuisine or a Dish" class="w-4/5 bg-gray-700 rounded-full py-3 px-6 text-gray-300"/>
         
-
-    
     </div>
+    <div>
+        {foods.map(food => <ItemCard handleclick={handleclick} food={food} />)}
+    </div>
+</div>
+
   )
 }
 
